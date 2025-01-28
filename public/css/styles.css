@@ -1,0 +1,395 @@
+body,h1,h2,h3,p,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 22px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+header h3{
+    margin-top:5px
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover,nav a:active
+{
+    color: #d9b868 !important;
+}
+#search-bar {
+    text-align: center;
+    margin: 20px;
+}
+
+#about-content {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center ;
+}
+#search-input {
+    padding: 8px;
+    font-size: 16px;
+}
+#contact-form {
+        max-width: 450px;
+            margin: 100px auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: 10px 10px #ffc07614;
+            min-height: 570px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    float: left;
+    color: #d9b868;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #d9b868;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#property-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#cards-container{
+    margin-top:20px auto;
+    
+}
+
+.property-card {
+    width: 300px;
+    margin: 4%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.property-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.property-image-container {
+    position: relative;
+}
+
+.property-image-carousel {
+    display: flex;
+    overflow: hidden;
+    height: 215px;
+    
+}
+
+.property-image-carousel img {
+    width: 100%;
+    display: none;
+}
+
+.property-image-carousel img:first-child {
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #d9b868;
+    color: #ddd;
+}
+
+.next {
+    right: 0;
+}
+
+.property-details {
+    margin-top: 10px;
+}
+
+.property-price {
+    font-weight: bold;
+    color: #d9b868;
+}
+
+.property-description {
+    margin-top: 10px;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+  
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    color: #fff;
+}
+
+
+/* =========================dropdown=========================== */
+.dropbtn {
+    background-color: #d9b868;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -11px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #d9b868;
+  }
+
+  .btn-success{
+    background-color: #d9b868 !important;
+    color: #f1f1f1;
+    border-color: #d9b868;
+
+  }
+  .btn-success:hover{
+  
+    border-color: #9b834b  !important;
+
+  }
+
+  /* =================ssection about==================== */
+  .Section-About {
+    background-image: url(../images/ikea-modern-living-room-design.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Section-About .titile-section{
+    margin-top: 25%;
+}
+
+.Section-About .titile-section h3{
+    color: #d9b868;
+    padding: 5px;
+    font-weight: 600;
+}
+.Section-About .titile-section p{
+    color: #f1f1f1;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+/* =================section header===================== */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.sections .header{
+    margin: 0 auto;
+}
+.sections .header h5{
+    font-size: 32px;
+    line-height: 51px;
+    color: #302A2A;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+.sections.header p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #534C4C;
+    margin-bottom: 0;
+}
+
+.contact-info{
+    margin-top: 10px;
+}
+
+/********************************/
+/* About-items-section  Css    */
+/********************************/
+.About-items-section
+{
+    padding: 80px 0 0 0;
+}
+.box-About-item
+{
+    -webkit-transition: all 1s ease-out; 
+     transition: all 1s ease-out;
+     box-shadow: 0px 4px 16px 0px #16161626;
+     background: #fff;
+     padding: 40px 50px;
+}
+.box-About-item:hover
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.box-About-item svg
+{
+    display: block;
+    margin: 0 auto 8px auto;
+}
+.box-About-item .box-text h3
+{
+    font-size: 24px;
+    color: #302A2A;
+    line-height: 38px;
+    margin-bottom: 16px;
+    font-family: 'Almarai-Bold';
+}
+.box-About-item .box-text  p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: #534C4C;
+    margin-bottom: 0;
+}
+.banner-fluid-image
+{
+    margin-top: 80px;
+}
+.banner-fluid-image img
+{
+    display: block;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+.text-attach-to-image-fluid .card-text
+{
+    box-shadow: 0px 8px 0px 0px #d9b868 inset;
+    background: #fff;
+    padding: 40px;
+    position: relative;
+    top: -46%;
+}
+.text-attach-to-image-fluid .card-text h3
+{
+    font-size: 24px;
+    line-height: 38px;
+    color: #302A2A;
+    margin-bottom: 16px;
+    letter-spacing:-0.5px;
+    font-family: 'Almarai-Bold';
+}
+.text-attach-to-image-fluid .card-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: #534C4C;
+    margin-bottom: 0;
+}
+.section {
+    color: inherit;
+}
+
+.section[data-bg=yellow] {
+    color: #333;
+}
+
+.section[data-bg=white] {
+    color: #302A2A;
+}
+
+.morebtn{
+    width: 100px;
+    margin: 5px auto;
+}
